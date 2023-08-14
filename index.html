@@ -7,7 +7,7 @@
 
     <style>
       .container {
-        margin-top: 100px;
+        margin-top: 10px;
       }
 
       p {
@@ -20,9 +20,7 @@
         text-decoration: none;
       }
       .gt-head {
-        width: 100%;
-        margin: auto;
-        padding: 10px;
+
         margin-bottom: 10px;
         font-size: 20pt;
 
@@ -30,7 +28,7 @@
       }
       .api-list-item-api-name{
         text-align: left;
-        font-size: 17pt;
+        font-size: 16pt;
 
         font-style: italic;
       }
@@ -170,29 +168,7 @@
                 }
             ],
           },
-          {
-            gtName: "GT - Serviços",
-            apis: [
-                {
-                    apiName: "Pagamentos sem Redirecionamento",
-                    api: "enrollments",
-                    confluenceProd : "",
-                    confluenceDraft:""
-                },
-                {
-                    apiName: "Pagamentos",
-                    api: "payments",
-                    confluenceProd : "",
-                    confluenceDraft:""
-                },
-                {
-                    apiName: "Webhook",
-                    api: "webhook",
-                    confluenceProd : "",
-                    confluenceDraft:""
-                }
-            ],
-          },
+          
           {
             gtName: "GT - Dados abertos",
             apis: [
@@ -257,10 +233,32 @@
                     confluenceDraft:""
                 }
             ],
+          },{
+            gtName: "GT - Serviços",
+            apis: [
+                {
+                    apiName: "Pagamentos sem Redirecionamento",
+                    api: "enrollments",
+                    confluenceProd : "",
+                    confluenceDraft:""
+                },
+                {
+                    apiName: "Pagamentos",
+                    api: "payments",
+                    confluenceProd : "",
+                    confluenceDraft:""
+                },
+                {
+                    apiName: "Webhook",
+                    api: "webhook",
+                    confluenceProd : "",
+                    confluenceDraft:""
+                }
+            ],
           },
         ];
 
-        let html = "<p>Open API</p>";
+        let html = "";
 
   
 
@@ -286,19 +284,17 @@
                             </div>`;
           });
 
-          html += `  <div class="col-md-4 gt-head">
+          html += `  <div class="col-md-4 col-xs-4 col-sm-12 gt-head">
                        
                             ${gt.gtName}
                         
                         ${apiHtml}
                         </div>
-                    
                     `;
         });
-
         const container = document.getElementsByClassName("container")[0];
 
-        container.innerHTML = html;
+        container.innerHTML = `<p>Open API</p>  <div class="row ">${html} <div>`;
       }
     </script>
   </body>
