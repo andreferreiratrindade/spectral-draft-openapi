@@ -134,7 +134,6 @@ oas['paths'].each_with_index do |(path, methods)|
       elsif
        
         applicationData = response['content'];
-
         if response['content']['application/json'] != nil
           applicationData = response['content']['application/json'];
         elsif response['content']['application/jwt'] != nil
