@@ -1,0 +1,16 @@
+{
+  "name": "spectral-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "spectral-service.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@stoplight/spectral-core": "^1.18.3",
+    "@stoplight/spectral-ruleset-bundler": "^1.5.2"
+  }
+}

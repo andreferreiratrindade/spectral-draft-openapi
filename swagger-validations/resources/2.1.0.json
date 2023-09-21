@@ -1,0 +1,1 @@
+[{"code":"oas3-unused-component","message":"Potentially unused component has been detected.","path":["components","schemas","ResponseError"],"severity":1,"source":"resources/2.1.0.yml","range":{"start":{"line":231,"character":18},"end":{"line":273,"character":45}}}]
