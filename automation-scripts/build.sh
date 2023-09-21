@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
 PATH_PARM1="$1"
+
+node ./spectral-service/spectral-service.js $PATH_PARM1
+
 PROJECT_ROOT_DIR=`git rev-parse --absolute-git-dir | cut -d '.' -f1`
 PATH_PARM1=$PROJECT_ROOT_DIR'/swagger-apis/'$PATH_PARM1
 echo 'Verificando arquivo: '$PATH_PARM1

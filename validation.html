@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css">
+
+    <style>
+        .container {
+            margin-top: 100px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 30pt;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        .api-list-item a {
+            color: white;
+        }
+
+        .api-list-item {
+            width: 100%;
+            margin: auto;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .api-list-item:nth-child(odd) {
+            background-color: #005f78;
+        }
+
+        .api-list-item:nth-child(even) {
+            background-color: #157D96;
+        }
+    </style>
+</head>
+<body onload="createInfoValidation()">
+<div class="container">
+
+</div>
+
+
+<script>
+    const validation_path = "./swagger-validations";
+    function createInfoValidation(){
+      let api =  new URLSearchParams(window.location.search);
+
+
+    }
+    function getAllVersions(path){
+        
+    }
+</script>
+</body>
+</html>
